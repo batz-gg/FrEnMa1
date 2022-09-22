@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+</head>
+<style>
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: darkgrey;
+        color: beige;
+        margin: 0;
+    }
+
+    header {
+        display:         flex;
+        flex-direction:  column;
+        justify-content: center;
+        align-items:     center;
+        text-align:      center;
+        height:          100vh;
+    }
+
+    header::before {
+        content: '';
+        background: url(https://images.unsplash.com/photo-1653592328269-09c14b3628f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&dpr=2&auto=format%2Ccompress&fit=crop&w=1999&h=594) no-repeat center center/cover;
+
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    header > h1 {
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    /* .is-required::after {
+        content: '*';
+        font-weight: bolder;
+        color: goldenrod;
+        padding-left: 2px;
+    } */
+</style>
+<body>
+    <!-- <label class="is-required" for="name">Нэр</label>
+    <input type="text"> -->
+    <header>
+        <h1>Hello Guys!<br />😅😅😅</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid.</p>
+    </header>
+
+    <section>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis vel ipsum rem molestias exercitationem distinctio, perspiciatis eaque quia suscipit aperiam error dolor sint ex placeat molestiae corrupti? Totam, omnis sapiente!</p>
+    </section>
+</body>
+</html>

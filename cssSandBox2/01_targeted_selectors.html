@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+    <style>
+        
+        /* Direct Child */
+        div > p {
+            background: #ddd;
+        }
+
+        /* Directly After Element */
+        div + p {
+            background: #333;
+            color: #fff;
+        }
+
+        /* By Attributes */
+        a[target] {
+            background: red;
+            color: wheat;
+        }
+
+        /* By Attributes Value */
+        a[target='_self'] {
+            background: orange;
+            color: orchid;
+        }
+
+        /* Specifically values */
+        input[type='text'],
+        input[type='email'] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet. 1</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li><p>Item 2</p></li>
+            <li>Item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet. 2</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet. 3</p>
+
+    <a href="#">Хуудас 1</a>
+    <a href="#" target="_self">Хуудас 2</a>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <br><br>
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

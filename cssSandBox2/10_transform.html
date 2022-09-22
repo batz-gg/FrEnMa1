@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        body {
+            background-color: rgb(11, 38, 61);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: aliceblue;
+            width: 300px;
+            height: 300px;
+            /* transition: all 2s ease-in-out; */
+            /* transform: rotate(25deg); */
+            /* transform: skew(25deg); */
+            /* transform: scale(2); */
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            /* transform: rotate(180deg);
+            transform: skew(25deg);
+            transform: scale(2); */
+
+            transform: translateY(100px);
+            transform: translateX(100px);
+            transform: translate(100px, -220px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

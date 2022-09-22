@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+</head>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: nowrap; */
+        /* align-content: flex-start; */
+        /* flex-flow: row wrap; */
+
+    }
+
+    .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: cornsilk;
+        text-align: justify;
+        border-radius: 5px;
+
+        /* offset-x, offset-y, color */
+        /* box-shadow: 10px 10px teal; */
+
+        /* offset-x, offset-y, blur-radius, color */
+        /* box-shadow: 5px 5px 20px teal; */
+
+        /* negative value */
+        /* box-shadow: -5px -5px 20px teal; */
+
+        /* offset-x, offset-y, blur-radius, spread-radius, color */
+        /* box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3); */
+        
+        /* inset, offset-x, offset-y, color */
+        /* box-shadow: inset -5px -5px thistle; */
+
+        /* multiple box-Shadows */
+        box-shadow: 3px 3px 10px teal, -3px -3px 10px olivedrab;
+
+    }
+
+    
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Title🥱</h3>
+            <hr />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem!</p>
+        </div>
+        <div class="box">
+            <h3>Title😫</h3>
+            <hr />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem!</p>
+        </div>
+        <div class="box">
+            <h3>Title😴</h3>
+            <hr />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem!</p>
+        </div>
+        <div class="box">
+            <h3>Title😯</h3>
+            <hr />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem!</p>
+        </div>
+        <div class="box">
+            <h3>Title🤯</h3>
+            <hr />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem!</p>
+        </div>
+    </div>
+</body>
+</html>

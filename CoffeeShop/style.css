@@ -1,0 +1,267 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Main style */
+html body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #b46490;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ce84ad;
+  color: #333;
+}
+
+.btn-light {
+  background: #fff;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+
+.bg-pink {
+  background: #b46490;
+  color: #333;
+}
+
+.clr {
+  clear: both;
+}
+
+p {
+  padding: 10px 0;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
+/* Navigation Bar */
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #b46490;
+}
+
+/* Show Case */
+#showcase {
+  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Coffee Shop Information */
+#coffee-info {
+  height: 400px;
+}
+
+#coffee-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('./img/photo1.jpg') no-repeat center center/cover;
+  min-height: 100%;
+}
+
+#coffee-info .info-text {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#coffee-info .info-text p {
+  padding-bottom: 30px;
+}
+
+#coffee-info .info-text h2 {
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  width: 33.3%;
+  border: #333;
+  float: left;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* About */
+#about-info .info-right {
+  margin: 30px 0;
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  margin: 30px 0;
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Comments */
+#comments {
+  height: 600px;
+  background: url(./img/test-bg.jpg) no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#comments h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#comments .comment {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.8;
+
+}
+
+#comments .comment img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+
+}
+
+/* Contact */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-group textarea {
+  height: 200px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(190, 132, 188);
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
