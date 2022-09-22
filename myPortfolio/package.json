@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "name": "myportfolio",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "description": "HTML CSS for Portfolio"
+}

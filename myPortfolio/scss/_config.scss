@@ -1,0 +1,21 @@
+$main-color: #FFB700;
+$primary-color: steelblue;
+$secondary-color: skyblue;
+$medium-color: rgb(64, 110, 128);
+$dark-color: slateblue;
+$light-color:#f4f4f4;
+$website-width: 100vw;
+$font-stack: Arial,
+Helvetica,
+sans-serif;
+
+$bg-image: url('../img/showcase.jpg');
+
+// Change text color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
